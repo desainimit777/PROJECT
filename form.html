@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>On The Vacation</title>
+	<link rel="stylesheet" type="text/css" href="./css/form1.css">
+	<link rel="shortcut icon" href="logo-png.png" type="image/x-icon">
+	<link href="/your-path-to-fontawesome/css/all.css" rel="stylesheet">
+	<link rel = "icon" href =  "./img/logo-png.png" type = "image/x-icon">
+	
+</head>
+<body>
+	<div class="header">
+		<nav>
+			<div class="nav-logo">
+				<a href="./website.html"><img src="./img/logo-png.png" height="70px;" width="110 px"></a>
+				<a href="./website.html">ON THE VACATION</a>
+			</div>
+
+			<div class="nav-items">
+		        <ul>
+		          <li><a href="#">About us</a> &nbsp &nbsp &nbsp</li>
+		          <li><a href="#go_to_Destinations">Destinations</a></li>
+				  <li><a href="#">Flights</a>
+					<ul class="dropdown">
+						<li><a href="https://www.emirates.com/in/english/" target="_blank">EMIRATES</a></li>
+						<li><a href="https://www.goindigo.in/"  target="_blank">INDIGO</a></li>
+					</ul>
+					</li>
+		          <li><a href="https://www.trivago.in/" target="_blank">Hotels</a></li>
+		          <li><a href="#">Contact us</a></li>	
+		        </ul>
+		    </div>
+		</nav>
+		<div id = "id01" class="modal">
+			<form name="myForm" class="reg-form" onsubmit="return validateForm()" method="post"> 
+				<p style="text-align: center; padding-left: 500px; font-size: 30px;"><big><b>REGISTER YOUR SELF</b></big></p><br>
+			NAME:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input  id="name"  type="text" name="name" placeholder="ENTER YOUR NAME" required><br><br>
+			E-MAIL:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="mail" type="text" name="email" placeholder="ENTER EMAIL" required pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$"><br><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp &nbsp&nbspPHONE NUMBER:&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	<input class = "phone" type="tel" id="phone"  name="phone" required pattern="[0-9]{10}"><br><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspCOUNTRY :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			
+			<input list="country" type="text" name="country"placeholder="ENTER COUNTRY YOU WANT TO VISIT" id="countrys" required>
+			<datalist id="country">
+				<option value="DUBAI"></option>
+				<option value="FRANCE"></option>
+				<option value="INDIA"></option>
+				<option value="ITALY"></option>
+				<option value="THAILAND"></option>
+				<option value="USA"></option>
+			</datalist>
+			<br><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspPLACE :  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input list="place" type="text" name="place"placeholder="ENTER PLACE YOU WANT TO VISIT" id="places" required>
+			<datalist id="place">
+				<option value="AMALFI COAST">
+				<option value="ARLES">
+				<option value="BANGKOK">
+				<option value="BORDEAUX">
+				<option value="BURJ KHALIFA">
+				<option value="Desert Safari">
+				<option value="Dubai Aquarium and Underwater Zoo">
+				<option value="Empire State Building(NY)">
+				<option value="Ferrari World">
+				<option value="FRENCH RIVIERA">
+				<option value="GOA">
+				<option value="Golden Gate Bridge(CA)">
+				<option value="KERALA">
+				<option value="KRABI">
+				<option value="LEH-LADAKH">
+				<option value="LOS ANGELES">
+				<option value="MONT SAINT-MICHEL">
+				<option value="MUMBAI">
+				<option value="NEW YORK CITY">
+				<option value="PARIS">
+				<option value="PATTAYA">
+				<option value="PHI PHI ISLAND">
+				<option value="PHUKET">
+				<option value="POMPEII">
+				<option value="ROME">
+				<option value="Skydiving at PALM JUMEIRAH">
+				<option value="Taj-Mahal(AGRA)">
+				<option value="TUSCANY">
+				<option value="VENICE">
+				<option value="White House(WASHINGTON DC)">
+				
+				</datalist>
+			&nbsp<br><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspNO OF PERSON : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input id="person" type="number" name="person"placeholder="ENTER NO OF PERSON" required min="2"> &nbsp<br><br>
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspDEPARTURE DATE : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" id="d_date" name="trip-start" required
+			value="2020-03-22"
+			min="2020-01-01" max="2020-12-31"><br><br>
+
+			&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbspARRIVAL DATE : &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<input type="date" id="a_date" name="trip-start" required
+			value="2020-03-22"
+			min="2020-01-01" max="2020-12-31"><br><br>
+			<button type="reset" class="btn">RESET</button>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+			<input class="btn" type="submit" name="submit" value="SUBMIT" onclick="validateForm()"></input></form></div>
+		</div>
+		<body></html>
+		<script>
+			function validateForm() {
+		
+			var name = document.getElementById('name').value;
+			var mail = document.getElementById('mail'.value);
+			var phone = document.getElementById('phone').value;
+			var place = document.getElementById('places').value;
+			var person = document.getElementById('person').value;
+			var d_date=document.getElementById('d_date').value;
+			var a_date=document.getElementById('a_date').value;
+			
+			alert("HI "+name+" WE COLLECTED YOUR DATA AND WE WILL CONTACT YOU SOON ON "+phone+"...HOPE YOU WILL ENJOY THE TRIP OF "+place+"...");
+			}
+		
+			</script>
+
+        </body>
+		</html>
+		
